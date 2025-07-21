@@ -660,6 +660,145 @@ a.box:active { box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #1a8
 
 @media screen and (min-width: 1408px) { .container:not(.is-max-desktop):not(.is-max-widescreen) { max-width: 1344px; } }
 
+    /* Existing media queries */
+
+    /* Para telas menores que 769px (celulares) */
+    @media screen and (max-width: 768px) {
+      .agradecimento h1 {
+        font-size: 1.3rem;
+      }
+      /* Adicione outras regras específicas para celular aqui */
+      .title.is-size-1-desktop {
+        font-size: 2rem !important; /* Ajuste para títulos grandes em telas pequenas */
+      }
+      .title.is-size-2-tablet {
+        font-size: 1.5rem !important;
+      }
+      .title.is-size-3-mobile {
+        font-size: 1.2rem !important;
+      }
+      .subtitle.is-size-4-tablet {
+        font-size: 1rem !important;
+      }
+      .title.is-size-3-desktop {
+        font-size: 1.8rem !important;
+      }
+      .title.is-size-4-mobile {
+        font-size: 1.3rem !important;
+      }
+      .subtitle.is-size-5-desktop {
+        font-size: 1rem !important;
+      }
+      .project-grid .column {
+        width: 100%; /* Garante que os projetos fiquem em uma coluna */
+      }
+      .navbar-menu {
+        box-shadow: none; /* Remove sombra desnecessária em mobile */
+      }
+      .navbar-item {
+        padding: 0.75rem 1rem; /* Ajusta padding para itens do menu */
+      }
+      .navbar-end {
+        flex-direction: column; /* Empilha botões no menu mobile */
+        align-items: center;
+      }
+      .navbar-item .button {
+        width: 80%; /* Botões maiores no menu mobile */
+        margin-bottom: 0.5rem;
+      }
+      .hero-body .columns {
+        flex-direction: column; /* Empilha elementos no hero */
+      }
+      .hero-body .column {
+        padding: 1rem; /* Ajusta padding */
+      }
+      .avatar {
+        max-width: 150px; /* Ajusta tamanho do avatar */
+      }
+      .skills .column {
+        margin-bottom: 2rem; /* Espaçamento entre colunas de habilidades */
+      }
+      .skills .column:last-child {
+        margin-bottom: 0;
+      }
+      .testimonials-slider {
+        padding: 0 1rem; /* Ajusta padding do slider */
+      }
+      .testimonial-block {
+        padding: 1rem; /* Ajusta padding do bloco de depoimento */
+      }
+      .call-to-action .box {
+        flex-direction: column; /* Empilha elementos no call-to-action */
+        text-align: center;
+      }
+      .call-to-action .column {
+        margin-bottom: 1rem;
+      }
+      .call-to-action .button {
+        width: 80%;
+      }
+      footer .columns {
+        flex-direction: column;
+        text-align: center;
+      }
+      footer .column {
+        margin-bottom: 1rem;
+      }
+      .social-icons .button {
+        margin: 0.5rem;
+      }
+    }
+
+    /* Novo breakpoint para tablets (769px a 1023px) */
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
+      .container {
+        max-width: 720px; /* Ajuste o max-width para tablets */
+      }
+      .title.is-size-1-desktop {
+        font-size: 2.5rem !important;
+      }
+      .title.is-size-2-tablet {
+        font-size: 2rem !important;
+      }
+      .subtitle.is-size-4-tablet {
+        font-size: 1.2rem !important;
+      }
+      .title.is-size-3-desktop {
+        font-size: 2rem !important;
+      }
+      .subtitle.is-size-5-desktop {
+        font-size: 1.1rem !important;
+      }
+      .project-grid .column {
+        width: 50%; /* Dois projetos por linha em tablets */
+      }
+      .skills .column {
+        width: 50%; /* Duas colunas de habilidades em tablets */
+        margin-bottom: 1.5rem;
+      }
+      .skills .column:nth-child(odd) {
+        padding-right: 0.75rem;
+      }
+      .skills .column:nth-child(even) {
+        padding-left: 0.75rem;
+      }
+      .skills .column:last-child {
+        margin-bottom: 0;
+      }
+      .call-to-action .column {
+        width: 33.33%; /* Mantém o layout em 3 colunas */
+      }
+    }
+
+    /* Para telas maiores que 1023px (desktops) */
+    @media screen and (min-width: 1024px) {
+      .container {
+        max-width: 960px; /* Mantém o max-width original para desktops */
+      }
+      /* Regras existentes para desktop */
+    }
+    
+
 .content li + li { margin-top: 0.25em; }
 
 .content p:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content ul:not(:last-child), .content blockquote:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child) { margin-bottom: 1em; }
