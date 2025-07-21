@@ -150,11 +150,57 @@
             transform: translateX(-50%);
         }
 
-        .hero-foot img.is-bottom {
-  width: 100%; /* Garante que a imagem ocupe 100% da largura do seu contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove qualquer espaço extra que possa ser adicionado por padrão */
-}
+        .tech-image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        
+        .tech-image {
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            max-height: 300px;
+            object-fit: contain;
+            display: block;
+        }
+
+        @media (max-width: 320px) {
+            .tech-image {
+                max-height: 120px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+          @media (max-width: 480px) and (min-width: 321px) {
+            .tech-image {
+                max-height: 200px;
+            }
+        }
+
+         @media (min-width: 768px) {
+            .tech-image {
+                max-height: 300px;
+            }
+            
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .tech-image {
+                max-height: 400px;
+            }
+        }
         
         /* CARDS */
         .cards {
@@ -329,9 +375,9 @@
           </div>
         </div>
       </div>
-      <div class="hero-foot">
-        <div class="container"><img class="is-bottom" src="img/tecnolgiaservices.svg"></div>
-      </div>
+      <div class="tech-image-container">
+                <img src="img/tecnolgiaservices.svg" alt="Ilustração de tecnologias modernas incluindo nuvem, dispositivos móveis e inteligência artificial" class="tech-image">
+            </div>
     </section>
     <section class="section is-medium is-primary has-text-centered is-long">
       <div class="container">
