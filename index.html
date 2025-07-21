@@ -209,6 +209,16 @@
             margin: 0 10px;
             font-size: 1.5rem;
         }
+
+         /* SVG Fix */
+        img.is-bottom {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            object-fit: contain;
+            overflow: visible;
+        }
         
         /* MEDIA QUERIES PARA RESPONSIVIDADE */
         /* TABLET (768px) */
@@ -264,7 +274,7 @@
             }
         }
         
-        /* AJUSTES ESPECÍFICOS PARA TAB S6 LITE */
+        /* AJUSTES ESPECÍFICOS */
         @media screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
             .container {
                 padding: 0 30px;
