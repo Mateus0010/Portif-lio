@@ -149,6 +149,12 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        .hero-foot img.is-bottom {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura do seu contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove qualquer espaço extra que possa ser adicionado por padrão */
+}
         
         /* CARDS */
         .cards {
@@ -209,16 +215,6 @@
             margin: 0 10px;
             font-size: 1.5rem;
         }
-
-         /* SVG Fix */
-        img.is-bottom {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            display: block;
-            object-fit: contain;
-            overflow: visible;
-        }
         
         /* MEDIA QUERIES PARA RESPONSIVIDADE */
         /* TABLET (768px) */
@@ -274,7 +270,7 @@
             }
         }
         
-        /* AJUSTES ESPECÍFICOS */
+        /* AJUSTES ESPECÍFICOS PARA TAB S6 LITE */
         @media screen and (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
             .container {
                 padding: 0 30px;
